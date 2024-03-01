@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Coffee Shop</h1>
+        <button id="btn" onclick="cartShow()"><img src="logo.jfif" alt="">
+        <span id="span1">0</span>
+        </button>        
+    </div>
+
+<div id="div1"></div>
+
+<div id="div2" ></div>
+
+<script>
+let product=[
+    {name :"coffee1",description :"This is coffee1",price :1000,image: "c1.jfif"},
+    {name :"coffee2",description :"This is coffee2",price :1100,image : "c2.jfif"},
+    {name :"coffee3",description :"This is coffee3",price :1200,image : "c5.jfif"},
+    {name :"coffee4",description :"This is coffee4",price :1300,image : "c4.jfif"},
+    {name :"coffee5",description :"This is coffee5",price :1400,image : "c3.jfif"},
+    {name :"coffee6",description :"This is coffee6",price :1500,image : "c6.jfif"},
+  ];
+let cart =[]
+
+
+let msg="";
+ 
+ product.forEach((value,index) =>{
+    msg=msg + `<div class="container"> 
+        <div><img src=${value.image} height="150px" width="150px"> </div>
+        <div>${value.name}</div>
+        <div>${value.description}</div>
+        <div>price :${value.price}</div><br>
+        <div><button id="cartBtn" onclick="cartt(${index})">Add to Cart</button></div>
+
+            </div>`;
+});
+div1.innerHTML=msg;
+
+function cartt(i){
+    console.log(i);
+    cart.push(product[i]);
+    document.getElementById('span1').innerHTML = cart.length;
+    console.log(cart);
+}
+
+function cartShow(){
+    let txt="";
+    cart.forEach((value) =>{
+        txt=txt + `<div class="container">
+        <div><img src=${value.image} height="50px" width="50px"> </div>
+        <div>${value.name}</div>
+        <div>${value.description}</div>
+        <div>price :${value.price}</div><br>`;
+    });
+    div2.innerHTML=txt;
+}
+
+</script>
+  
+</body>
+</html>
