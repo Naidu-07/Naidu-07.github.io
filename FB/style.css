@@ -1,0 +1,50 @@
+body{
+    margin:0;
+}
+.banner{
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color:whitesmoke;
+}
+.title{
+    width:80%;
+}
+.userinfo{
+    font-style: italic;
+}
+#container{
+
+    display: flex;
+    width:90%;
+    margin: auto;
+    padding: 20px;
+}
+.loginleft{
+    width: 500px;
+    padding: 20px;
+}
+.loginright{
+    width: 300px;
+    text-align:center;
+}
+.loginright input,button{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.footer{
+    background-color: darkgrey;
+}
+.divmenu{
+    width:20%;
+    border-right:dotted 1px;
+    padding:2px;
+    line-height: 20px;
+}
+.divcont{
+    width:80%;
+    padding:10px;
+}
