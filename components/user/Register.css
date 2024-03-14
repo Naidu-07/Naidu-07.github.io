@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 5% auto;
+  padding: 40px;
+  width: 500px;
+  background-color: bisque;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Rigister-header {
+  display: flex;
+}
+
+.Register-signup-title {
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.Register-text-box{
+  margin-top: 20px;
+}
+
+.Register-msg{
+  font-size: 20px;
+  font-weight: bold;
+  color:red;
+  padding:5px
+}
